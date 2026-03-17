@@ -1,0 +1,24 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "POST",
+    "urlPath": "/api/users",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.name"
+      }
+    ]
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": 999,
+      "name": "John Doe",
+      "job": "QA Engineer",
+      "createdAt": "2024-01-15T10:30:00.000Z"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/users/999"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "data": {
+        "id": 999,
+        "email": "john.doe@reqres.in",
+        "first_name": "John",
+        "last_name": "Doe",
+        "avatar": "https://reqres.in/img/faces/999-image.jpg"
+      }
+    }
+  }
+}

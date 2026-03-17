@@ -1,0 +1,24 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPath": "/api/users",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{}"
+      }
+    ]
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": "999",
+      "name": "",
+      "job": "",
+      "createdAt": "2024-01-15T10:30:00.000Z"
+    }
+  }
+}

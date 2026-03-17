@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPath": "/api/users/999"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "name": "John Doe",
+      "job": "Senior QA Engineer",
+      "updatedAt": "2024-01-15T11:00:00.000Z"
+    }
+  }
+}
