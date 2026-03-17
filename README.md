@@ -61,17 +61,19 @@ Module‑specific tools:
 
 ## 4. How to Run the Tests
 
-From the root (`automation_task`):
+From the root (`automation_task`), run each module separately.
 
-### 4.1 Run all modules
+### 4.1 Run ReqRes API tests
 
 ```bash
+cd reqres-api
 mvn test
 ```
 
-### 4.2 Run only Amazon UI tests
+### 4.2 Run Amazon UI tests
 
 ```bash
+cd amazon-ui
 mvn test -pl amazon-ui
 ```
 
