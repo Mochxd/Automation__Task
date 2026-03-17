@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ReqRes API Suite" verbose="2" preserve-order="true">
+    <test name="API Tests" preserve-order="true">
+        <classes>
+            <class name="apisTestCases.CreateUserTest"/>
+            <class name="apisTestCases.GetUserTest"/>
+            <class name="apisTestCases.UpdateUserTest"/>
+            <class name="apisTestCases.ApiErrorHandlingTest"/>
+        </classes>
+    </test>
+</suite>
