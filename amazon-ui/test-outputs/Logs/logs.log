@@ -1,0 +1,464 @@
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - ============ Amazon UI Test Execution Started ============
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.properties.PropertiesManager] - Framework configuration loaded
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - Allure results directory cleaned
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - environment.properties written
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - executor.json written
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - Allure report branding files written to:  target/allure-results
+[INFO] - [17-03-2026 17:22:21] [main] [org.amazon.test.engine.common.properties.TestDataManager] - Test data loaded
+[INFO] - [17-03-2026 17:22:49] [main] [org.amazon.test.engine.ui.driver.Driver] - Browser started:  CHROME
+[INFO] - [17-03-2026 17:22:50] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Navigated to url:  https://www.amazon.eg/
+[INFO] - [17-03-2026 17:22:51] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - --- Starting test:  fullAmazonShoppingFlow  ---
+[INFO] - [17-03-2026 17:22:51] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: nav-link-accountList
+[INFO] - [17-03-2026 17:22:55] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  element
+[INFO] - [17-03-2026 17:22:56] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Enter mobile number or email"
+[INFO] - [17-03-2026 17:22:56] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.cssSelector: input[name='email']  with value:  mochxd@gmail.com
+[INFO] - [17-03-2026 17:22:56] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " mochxd@gmail.com " into  "Enter mobile number or email"
+[INFO] - [17-03-2026 17:22:56] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: continue
+[INFO] - [17-03-2026 17:22:56] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  element
+[INFO] - [17-03-2026 17:22:59] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Password"
+[INFO] - [17-03-2026 17:22:59] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: ap_password  with value:  Test@1234
+[INFO] - [17-03-2026 17:22:59] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Test@1234 " into  "Password"
+[INFO] - [17-03-2026 17:22:59] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: signInSubmit
+[INFO] - [17-03-2026 17:22:59] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Sign in"
+[INFO] - [17-03-2026 17:23:02] [main] [org.amazon.test.engine.ui.pages.LoginPage] - Logged in as:  mochxd@gmail.com
+[INFO] - [17-03-2026 17:23:03] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: nav-hamburger-menu
+[INFO] - [17-03-2026 17:23:03] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Open All Categories Menu"
+[INFO] - [17-03-2026 17:23:03] [main] [org.amazon.test.engine.ui.pages.AllMenuPage] - All menu opened
+[INFO] - [17-03-2026 17:23:04] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.cssSelector: #hmenu-content .hmenu-compressed-btn
+[INFO] - [17-03-2026 17:23:04] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "See All Categories"
+[INFO] - [17-03-2026 17:23:04] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.xpath: //*[@id='hmenu-content']//a[contains(.,'Video Games')]
+[INFO] - [17-03-2026 17:23:05] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Video Games"
+[INFO] - [17-03-2026 17:23:05] [main] [org.amazon.test.engine.ui.pages.AllMenuPage] - Clicked Video Games
+[INFO] - [17-03-2026 17:23:07] [main] [org.amazon.test.engine.ui.pages.VideoGamesPage] - Navigated to All Video Games listing
+[ERROR] - [17-03-2026 17:23:37] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Element not visible after  30 s:  By.cssSelector: li[id*='p_n_free_shipping'] a
+[INFO] - [17-03-2026 17:23:40] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Free Shipping filter confirmed active
+[INFO] - [17-03-2026 17:23:42] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - New Condition filter confirmed active
+[INFO] - [17-03-2026 17:23:42] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Price: High to Low"
+[INFO] - [17-03-2026 17:23:42] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Sorted by Price: High to Low
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 1: 18 cards
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 135,000 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 135000.0 EGP
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 49,999 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 49999.0 EGP
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 49,000 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:44] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 49000.0 EGP
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 47,699 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 47699.0 EGP
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 41,999 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 41999.0 EGP
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 40,553 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 40553.0 EGP
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 34,500 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 34500.0 EGP
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 33,639 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 01 " from  element
+[INFO] - [17-03-2026 17:23:45] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 33639.01 EGP
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 32,499 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 32499.0 EGP
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 31,999 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 31999.0 EGP
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 30,443 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 33 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 30443.33 EGP
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 29,499 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 29499.0 EGP
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 29,199 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:46] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 29199.0 EGP
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:23:47] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Nothing added on page 1 — next page
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 2: 18 cards
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 28,999 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 28999.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 25,599 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 25599.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 24,999 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 24999.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 23,205 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 23205.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 23,200 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 23200.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 22,499 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 22499.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 21,999 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 21999.0 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 21,846 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 19 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 21846.19 EGP
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 19,999 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:48] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 19999.0 EGP
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 18,500 " from  element
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 18500.0 EGP
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 16,499 " from  element
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:49] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 16499.0 EGP
+[INFO] - [17-03-2026 17:23:50] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:50] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 15,999 " from  element
+[INFO] - [17-03-2026 17:23:50] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:50] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 15999.0 EGP
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:23:51] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Nothing added on page 2 — next page
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 3: 18 cards
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black " from  "Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black"
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:23:52] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Sony Pulse Elite Wireless Headset (White) /PS5 " from  "Sony Pulse Elite Wireless Headset (White) /PS5"
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Sony Pulse Elite Wireless Headset (White) /PS5
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White " from  "Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White"
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,552 " from  element
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:53] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14552.0 EGP
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch, " from  "SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,"
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,390 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14390.0 EGP
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black " from  "Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black"
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 13,999 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 13999.0 EGP
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Alias USB Gaming Microphone " from  "SteelSeries Alias USB Gaming Microphone"
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: SteelSeries Alias USB Gaming Microphone
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 13,908 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 93 " from  element
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 13908.93 EGP
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black " from  "ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black"
+[INFO] - [17-03-2026 17:23:54] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Added 7 on page 3; total: 7
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 7 " from  element
+[INFO] - [17-03-2026 17:23:56] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Cart badge count matches: 7
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 1… " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments,… " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mo… " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel… " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Sony Pulse Elite Wireless Headset (White) /PS5 " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onbo… " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " TRUE FIT®-Uno red edition playing cards from 2 to 10 players best family game includes 108 playing cards - multi color " from  element
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] - Cart items (7): [ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 1…, Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments,…, SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mo…, Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel…, Sony Pulse Elite Wireless Headset (White) /PS5, Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onbo…, TRUE FIT®-Uno red edition playing cards from 2 to 10 players best family game includes 108 playing cards - multi color]
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] - Expected  (7): [Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black, Sony Pulse Elite Wireless Headset (White) /PS5, Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White, SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,, Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black, SteelSeries Alias USB Gaming Microphone, ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black]
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Sony Pulse Elite Wireless Headset (White) /PS5
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black
+[WARN] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✗ Not found: SteelSeries Alias USB Gaming Microphone
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.pages.CartPage] - Matched 6/7 expected items in cart.
+[ERROR] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - --- FAILED:  fullAmazonShoppingFlow  ---
+[WARN] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - No Driver found for test — skipping screenshot
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.driver.Driver] - Quitting WebDriver
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - WebDriver quit
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - Generating Allure report...
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - Allure report launched
+[INFO] - [17-03-2026 17:23:58] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - ============ Amazon UI Test Execution Finished ============
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - ============ Amazon UI Test Execution Started ============
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.properties.PropertiesManager] - Framework configuration loaded
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - Allure results directory cleaned
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - environment.properties written
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - executor.json written
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.reporting.AllureReportHelper] - Allure report branding files written to:  target/allure-results
+[INFO] - [17-03-2026 17:27:13] [main] [org.amazon.test.engine.common.properties.TestDataManager] - Test data loaded
+[INFO] - [17-03-2026 17:27:16] [main] [org.amazon.test.engine.ui.driver.Driver] - Browser started:  CHROME
+[INFO] - [17-03-2026 17:27:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Navigated to url:  https://www.amazon.eg/
+[INFO] - [17-03-2026 17:27:18] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - --- Starting test:  fullAmazonShoppingFlow  ---
+[INFO] - [17-03-2026 17:27:18] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: nav-link-accountList
+[INFO] - [17-03-2026 17:27:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  element
+[INFO] - [17-03-2026 17:27:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Enter mobile number or email"
+[INFO] - [17-03-2026 17:27:23] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.cssSelector: input[name='email']  with value:  mochxd@gmail.com
+[INFO] - [17-03-2026 17:27:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " mochxd@gmail.com " into  "Enter mobile number or email"
+[INFO] - [17-03-2026 17:27:23] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: continue
+[INFO] - [17-03-2026 17:27:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  element
+[INFO] - [17-03-2026 17:27:26] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Password"
+[INFO] - [17-03-2026 17:27:26] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: ap_password  with value:  Test@1234
+[INFO] - [17-03-2026 17:27:26] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Test@1234 " into  "Password"
+[INFO] - [17-03-2026 17:27:26] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: signInSubmit
+[INFO] - [17-03-2026 17:27:26] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Sign in"
+[INFO] - [17-03-2026 17:27:29] [main] [org.amazon.test.engine.ui.pages.LoginPage] - Logged in as:  mochxd@gmail.com
+[INFO] - [17-03-2026 17:27:29] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: nav-hamburger-menu
+[INFO] - [17-03-2026 17:27:30] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Open All Categories Menu"
+[INFO] - [17-03-2026 17:27:30] [main] [org.amazon.test.engine.ui.pages.AllMenuPage] - All menu opened
+[INFO] - [17-03-2026 17:27:31] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.cssSelector: #hmenu-content .hmenu-compressed-btn
+[INFO] - [17-03-2026 17:27:31] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "See All Categories"
+[INFO] - [17-03-2026 17:27:32] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.xpath: //*[@id='hmenu-content']//a[contains(.,'Video Games')]
+[INFO] - [17-03-2026 17:27:32] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Video Games"
+[INFO] - [17-03-2026 17:27:32] [main] [org.amazon.test.engine.ui.pages.AllMenuPage] - Clicked Video Games
+[INFO] - [17-03-2026 17:27:34] [main] [org.amazon.test.engine.ui.pages.VideoGamesPage] - Navigated to All Video Games listing
+[ERROR] - [17-03-2026 17:28:04] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Element not visible after  30 s:  By.cssSelector: li[id*='p_n_free_shipping'] a
+[INFO] - [17-03-2026 17:28:07] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Free Shipping filter confirmed active
+[INFO] - [17-03-2026 17:28:09] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - New Condition filter confirmed active
+[INFO] - [17-03-2026 17:28:09] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Price: High to Low"
+[INFO] - [17-03-2026 17:28:09] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Sorted by Price: High to Low
+[INFO] - [17-03-2026 17:28:11] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 1: 18 cards
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 135,000 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 135000.0 EGP
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 49,999 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 49999.0 EGP
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 49,000 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 49000.0 EGP
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 47,699 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 47699.0 EGP
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 41,999 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 41999.0 EGP
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 40,553 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:12] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 40553.0 EGP
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 34,500 " from  element
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 34500.0 EGP
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 33,639 " from  element
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 01 " from  element
+[INFO] - [17-03-2026 17:28:13] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 33639.01 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 32,499 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 32499.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 31,999 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 31999.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 30,443 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 33 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 30443.33 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 29,499 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 29499.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 29,199 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 29199.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:28:14] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Nothing added on page 1 — next page
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 2: 18 cards
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 28,999 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 28999.0 EGP
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 25,599 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 25599.0 EGP
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 24,999 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 24999.0 EGP
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 23,205 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 23205.0 EGP
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 23,200 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 23200.0 EGP
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 22,499 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:16] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 22499.0 EGP
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 21,999 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 21999.0 EGP
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 21,846 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 19 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 21846.19 EGP
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 19,999 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 19999.0 EGP
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 18,500 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:17] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 18500.0 EGP
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 16,499 " from  element
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 16499.0 EGP
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 15,999 " from  element
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:18] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 15999.0 EGP
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 185,000 " from  element
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 185000.0 EGP
+[INFO] - [17-03-2026 17:28:19] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Nothing added on page 2 — next page
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Page 3: 18 cards
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black " from  "Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black"
+[INFO] - [17-03-2026 17:28:20] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Sony Pulse Elite Wireless Headset (White) /PS5 " from  "Sony Pulse Elite Wireless Headset (White) /PS5"
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Sony Pulse Elite Wireless Headset (White) /PS5
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,999 " from  element
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14999.0 EGP
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White " from  "Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White"
+[INFO] - [17-03-2026 17:28:21] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,552 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14552.0 EGP
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch, " from  "SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,"
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 14,390 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 14390.0 EGP
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black " from  "Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black"
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 13,999 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 00 " from  element
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 13999.0 EGP
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Alias USB Gaming Microphone " from  "SteelSeries Alias USB Gaming Microphone"
+[INFO] - [17-03-2026 17:28:22] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: SteelSeries Alias USB Gaming Microphone
+[INFO] - [17-03-2026 17:28:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 13,908 " from  element
+[INFO] - [17-03-2026 17:28:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 93 " from  element
+[INFO] - [17-03-2026 17:28:23] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   Price: 13908.93 EGP
+[INFO] - [17-03-2026 17:28:23] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black " from  "ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black"
+[INFO] - [17-03-2026 17:28:23] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   → Added: ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] -   No parseable price — skip
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Added 7 on page 3; total: 7
+[INFO] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " 6 " from  element
+[WARN] - [17-03-2026 17:28:27] [main] [org.amazon.test.engine.ui.pages.ProductListPage] - Cart badge shows 6 but 7 products were added
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Alias USB Gaming Microphone " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments,… " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mo… " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel… " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Sony Pulse Elite Wireless Headset (White) /PS5 " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Got text " Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onbo… " from  element
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] - Cart items (6): [SteelSeries Alias USB Gaming Microphone, Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments,…, SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mo…, Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel…, Sony Pulse Elite Wireless Headset (White) /PS5, Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onbo…]
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] - Expected  (7): [Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black, Sony Pulse Elite Wireless Headset (White) /PS5, Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White, SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,, Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black, SteelSeries Alias USB Gaming Microphone, ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black]
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro Tenkeyless- Tenkeyless Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Sony Pulse Elite Wireless Headset (White) /PS5
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard (Onboard Settings, Multifunction Wheel with 2 Dedicated Keys, PBT Keycaps) QWERTY US Layout | White
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ SteelSeries Arctis GameBuds for PlayStation - Wireless In-Ear Gaming Headphones - 2.4GHz + BT5.3 - ANC/Transparency Mode - Water Resistant IP55-40H Battery - Wireless Charging - PS5, PC, Switch,
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ Razer Huntsman V3 Pro - Analog Optical Esports Keyboard (Analog Optical Switches Gen-2, Quick Onboard Adjustments, Multi-function Digital Dial & Dedicated Control Buttons) US-Layout | Black
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ SteelSeries Alias USB Gaming Microphone
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] -   ✓ ASUS ROG Delta II Wireless Gaming Headset (BT, ROG SpeedNova 2.4GHz, 3.5mm, 50mm Titanium-Plated Drivers, 10mm Super-Wideband Mic, 110HR Battery, DualFlow Audio, for PC, Switch, PS5, Xbox)- Black
+[INFO] - [17-03-2026 17:28:29] [main] [org.amazon.test.engine.ui.pages.CartPage] - Matched 7/7 expected items in cart.
+[INFO] - [17-03-2026 17:28:31] [main] [org.amazon.test.engine.ui.pages.CartPage] - Proceeding to checkout
+[INFO] - [17-03-2026 17:28:31] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Checkout URL: https://www.amazon.eg/checkout/p/p-404-4390493-8103533/address?pipelineType=Chewbacca&referrer=address
+[INFO] - [17-03-2026 17:28:32] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Full name (First and Last name)"
+[INFO] - [17-03-2026 17:28:32] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: address-ui-widgets-enterAddressFullName  with value:  Test User
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Test User " into  "Full name (First and Last name)"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "e.g. 1XXXXXXXXX"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: address-ui-widgets-enterAddressPhoneNumber  with value:  01012345678
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " 01012345678 " into  "e.g. 1XXXXXXXXX"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Street name"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: address-ui-widgets-enterAddressLine1  with value:  Nasr
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Nasr " into  "Street name"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "Building name/no"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: address-ui-widgets-enter-building-name-or-number  with value:  Building 5
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Building 5 " into  "Building name/no"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clearing:  "City/Area"
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Filling field  By.id: address-ui-widgets-enterAddressCity  with value:  Cairo
+[INFO] - [17-03-2026 17:28:33] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Typing " Cairo " into  "City/Area"
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Typed into City: Cairo
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: address-ui-widgets-autoCompleteResult-0
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "Cairo, Cairo"
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - City — selected first suggestion
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: address-ui-widgets-enterAddressDistrictOrCounty
+[INFO] - [17-03-2026 17:28:34] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "District"
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Clicked District — waiting for dropdown
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.interactions.ElementActions] - Clicking element:  By.id: address-ui-widgets-autoCompleteResult-0
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - Clicking:  "15th of May City-15 May City"
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - District — selected first suggestion
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Governorate auto-filled — skipping
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Address submitted
+[INFO] - [17-03-2026 17:28:35] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Payment URL: https://www.amazon.eg/checkout/p/p-404-4390493-8103533/address?pipelineType=Chewbacca&referrer=address
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Cash on Delivery selected
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Clicked Continue
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Review URL: https://www.amazon.eg/checkout/p/p-404-4390493-8103533/pay?pipelineType=Chewbacca&hasWorkingJavascript=1
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Order summary:
+Use this payment method
+Items:
+EGP 87,938.00
+Shipping & handling:
+EGP 20.00
+Total:
+EGP 87,958.00
+Free Delivery
+-EGP 20.00
+Order total
+EGP 87,938.00
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - items=87938.0, shipping=20.0, total=87958.0, orderTotal=87938.0
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - items + shipping = 87958.0 vs Total = 87958.0 → PASS
+[INFO] - [17-03-2026 17:28:40] [main] [org.amazon.test.engine.ui.pages.CheckoutPage] - Order total after discounts: 87938.0 (discount: 20.0)
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - --- PASSED:  fullAmazonShoppingFlow  ---
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.driver.Driver] - Quitting WebDriver
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.listeners.webdriver.WebDriverListener] - WebDriver quit
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - Generating Allure report...
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - Allure report launched
+[INFO] - [17-03-2026 17:28:41] [main] [org.amazon.test.engine.ui.listeners.testng.TestNGListener] - ============ Amazon UI Test Execution Finished ============
